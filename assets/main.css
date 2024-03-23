@@ -1816,9 +1816,6 @@ article .highlight > div table tr td:last-of-type {
   }
 }
 
-.hover\:animate-spin:hover {
-  animation: spin 1s linear infinite;
-}
 
 .hover\:bg-black\/\[2\%\]:hover {
   background-color: rgb(0 0 0 / 2%);
