@@ -58,6 +58,11 @@
   <time class="text-xs antialiased opacity-60"
     >{{ .Date | time.Format ":date_medium" }}</time
   >
+  {{ if .Description }}
+  <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ .Description }}</p>
+  {{ else if .Summary }}
+  <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ .Summary }}</p>
+  {{ end }}
   <a class="absolute inset-0 text-[0]" href="{{ .Permalink }}">{{ .Title }}</a>
 </section>
 {{ end }}
